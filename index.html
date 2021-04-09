@@ -10,17 +10,20 @@
       name="description"
       content="In der Internet Technik Vorlesung der HdM Stuttgart lernen die Studierenden die Grundlagen des Internets und wie eine Webseite entwickelt wird."
     />
+    <!-- CSS Datei -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <header>
       <h1>Internet Technik</h1>
       <hr />
       <nav>
-        <a href="index.html">Startseite</a>
+        <a href="index.html" style="color: #426e86">Startseite</a>
         <a href="exercises.html">Übungen</a>
       </nav>
       <hr />
     </header>
+
     <section>
       <h2>Grundlagen</h2>
       <p>
@@ -32,8 +35,9 @@
         Kommandozeile? Was ist dieses <strong>Git</strong> und wofür brauchen wir es?
       </p>
     </section>
+
     <hr />
-    <aside>
+    <aside class="quote">
       <figure>
         <blockquote cite="https://de.wikipedia.org/wiki/Thomas_J._Watson">
           "Ich denke, es gibt weltweit einen Markt für vielleicht fünf Computer."
@@ -42,28 +46,35 @@
       </figure>
     </aside>
     <hr />
+
     <section>
       <h2>HTML</h2>
-      <p>
-        Das Grundgerüst jeder Webseite besteht aus HTML. Mit HTML beschreiben wir den Aufbau und die Inhalte unserer
-        Webseite.
-      </p>
-      <figure>
-        <img src="./images/html.jpg" alt="html letters" width="300" />
-        <figcaption>
-          Foto von
-          <a href="https://www.pexels.com/de-de/foto/vier-buchstabenkacheln-1591061/" target="_blank"
-            >Miguel Á. Padriñán</a
-          >
-        </figcaption>
-      </figure>
-      <p>Wichtige Aspekte von HTML sind:</p>
-      <ul>
-        <li>Accesibility</li>
-        <li>Semantik</li>
-        <li>SEO</li>
-      </ul>
+      <div class="two-columns">
+        <div>
+          <p>
+            Das Grundgerüst jeder Webseite besteht aus HTML. Mit HTML beschreiben wir den Aufbau und die Inhalte unserer
+            Webseite.
+          </p>
+          <p>Wichtige Aspekte von HTML sind:</p>
+          <ul>
+            <li>Accesibility</li>
+            <li>Semantik</li>
+            <li>SEO</li>
+          </ul>
+        </div>
+
+        <figure>
+          <img src="./images/html.jpg" alt="html letters" width="300" />
+          <figcaption>
+            Foto von
+            <a href="https://www.pexels.com/de-de/foto/vier-buchstabenkacheln-1591061/" target="_blank"
+              >Miguel Á. Padriñán</a
+            >
+          </figcaption>
+        </figure>
+      </div>
     </section>
+
     <hr />
     <footer><a href="https://www.hdm-stuttgart.de" target="_blank">HdM Stuttgart</a><span> - 2021</span></footer>
     <hr />
