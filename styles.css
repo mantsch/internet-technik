@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* Font Styles */
   font-family: Helvetica, Arial, sans-serif;
@@ -111,6 +115,21 @@ nav a:hover {
   }
 }
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav.internal {
+  background: #3e3e3e;
+  text-align: center;
+}
+
 /* Hero */
 
 .hero {
@@ -118,6 +137,7 @@ nav a:hover {
 }
 
 .hero img {
+  display: block;
   max-height: 75vh;
   object-fit: cover;
 }

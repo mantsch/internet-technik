@@ -16,22 +16,36 @@
 
   <body>
     <header class="nav-bar">
-      <div class="logo"><span>🚀</span> <strong>Internet Technik</strong></div>
+      <div class="logo">
+        <strong>🚀 Internet Technik</strong>
+      </div>
       <nav>
-        <a href="index.html">Startseite</a>
-        <a href="exercises.html">Übungen</a>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="exercises.html">Übungen</a></li>
+        </ul>
       </nav>
     </header>
 
     <section class="hero">
-      <img src="images/hero.jpg" />
+      <img src="images/hero.jpg" alt="" />
       <div class="headline-container">
         <h1>Internet Technik</h1>
         <h2>Entwickle deine eigene Webseite</h2>
       </div>
     </section>
 
-    <section class="content-container">
+    <aside>
+      <nav class="internal">
+        <ul>
+          <li><a href="#basics">Grundlagen</a></li>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="content-container" id="basics">
       <h2>Grundlagen</h2>
       <p>
         In den Grundlagen lernen wir wie das <strong>Internet</strong> funktioniert. Wie kann ein Client mit einem
@@ -52,7 +66,7 @@
       </figure>
     </aside>
 
-    <section class="content-container">
+    <section class="content-container" id="html">
       <h2>HTML</h2>
       <div class="two-columns">
         <div>
@@ -84,7 +98,7 @@
       <hr />
     </aside>
 
-    <section class="content-container">
+    <section class="content-container" id="css">
       <h2>CSS</h2>
       <p>
         Unser HTML können wir mit CSS gestalten. Hierfür stehen unterschiedliche Properties zu verfügung, die wir mit
