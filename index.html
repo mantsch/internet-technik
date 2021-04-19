@@ -15,17 +15,23 @@
   </head>
 
   <body>
-    <header>
-      <h1>Internet Technik</h1>
-      <hr />
+    <header class="nav-bar">
+      <div class="logo"><span>🚀</span> <strong>Internet Technik</strong></div>
       <nav>
-        <a href="index.html" style="color: #426e86">Startseite</a>
+        <a href="index.html">Startseite</a>
         <a href="exercises.html">Übungen</a>
       </nav>
-      <hr />
     </header>
 
-    <section>
+    <section class="hero">
+      <img src="images/hero.jpg" />
+      <div class="headline-container">
+        <h1>Internet Technik</h1>
+        <h2>Entwickle deine eigene Webseite</h2>
+      </div>
+    </section>
+
+    <section class="content-container">
       <h2>Grundlagen</h2>
       <p>
         In den Grundlagen lernen wir wie das <strong>Internet</strong> funktioniert. Wie kann ein Client mit einem
@@ -37,7 +43,6 @@
       </p>
     </section>
 
-    <hr />
     <aside class="quote">
       <figure>
         <blockquote cite="https://de.wikipedia.org/wiki/Thomas_J._Watson">
@@ -46,9 +51,8 @@
         <figcaption>Thomas J. Watson - IBM Chef - 1943</figcaption>
       </figure>
     </aside>
-    <hr />
 
-    <section>
+    <section class="content-container">
       <h2>HTML</h2>
       <div class="two-columns">
         <div>
@@ -65,7 +69,7 @@
         </div>
 
         <figure>
-          <img src="./images/html.jpg" alt="html letters" width="300" />
+          <img src="./images/html.jpg" alt="html letters" width="300" class="image-hover" />
           <figcaption>
             Foto von
             <a href="https://www.pexels.com/de-de/foto/vier-buchstabenkacheln-1591061/" target="_blank"
@@ -76,8 +80,20 @@
       </div>
     </section>
 
+    <aside class="content-container">
+      <hr />
+    </aside>
+
+    <section class="content-container">
+      <h2>CSS</h2>
+      <p>
+        Unser HTML können wir mit CSS gestalten. Hierfür stehen unterschiedliche Properties zu verfügung, die wir mit
+        einem Selektor auf unser HTML anwenden können.
+      </p>
+      <a class="button" href="https://developer.mozilla.org/de/docs/Web/CSS" target="_blank"> Mehr erfahren</a>
+    </section>
+
     <hr />
     <footer><a href="https://www.hdm-stuttgart.de" target="_blank">HdM Stuttgart</a><span> - 2021</span></footer>
-    <hr />
   </body>
 </html>
