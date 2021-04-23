@@ -242,3 +242,48 @@ img {
   color: var(--primary);
   transition: all 1s ease;
 }
+
+/* Projects */
+
+.project {
+  border: 1px solid var(--secondary);
+  padding: 30px;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.project em {
+  display: block;
+}
+
+.project a {
+  display: block;
+}
+
+.project .project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.project:hover {
+  background: var(--secondary);
+  color: var(--primary);
+  cursor: crosshair;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .project-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .project {
+    max-width: 400px;
+    margin: 30px;
+    width: 100%;
+  }
+}
