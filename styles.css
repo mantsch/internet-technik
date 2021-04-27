@@ -20,8 +20,8 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  background: #101010;
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--secondary);
   margin: 0;
 }
 
