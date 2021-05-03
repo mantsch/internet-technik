@@ -69,6 +69,11 @@ figcaption {
   font-size: 14px;
 }
 
+.credits {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
 /* Nav */
 
 .nav-bar {
@@ -249,6 +254,7 @@ img {
 .project {
   border: 1px solid var(--secondary);
   padding: 30px;
+  margin-bottom: 15px;
 }
 
 .project h3 {
@@ -279,12 +285,36 @@ img {
 @media (min-width: 768px) {
   .project-list {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .project {
-    max-width: 400px;
-    margin: 30px;
-    width: 100%;
+    width: 49%;
+    margin-bottom: 2%;
+  }
+
+  .project:nth-child(odd) {
+    margin-right: 1%;
+  }
+
+  .project:nth-child(even) {
+    margin-left: 1%;
+  }
+}
+
+/* Responsive Excercise */
+
+@media (min-width: 768px) {
+  .flexible-container {
+    display: flex;
+  }
+
+  /* equal size children */
+  .flexible-container .content {
+    flex: 1 0 0;
+  }
+
+  .content:not(:last-of-type) {
+    margin-right: 1rem;
   }
 }
