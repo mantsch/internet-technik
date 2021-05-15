@@ -12,6 +12,9 @@
     />
     <!-- CSS Datei -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/hamburger.css" />
+    <!-- JavaScript Datei -->
+    <script src="assets/hamburger.js"></script>
   </head>
 
   <body>
@@ -19,6 +22,10 @@
       <div class="logo">
         <strong>🚀 Internet Technik</strong>
       </div>
+      <button id="menu">
+        <img id="hamburger" src="assets/icons/hamburger.svg" class="active" />
+        <img id="close" src="assets/icons/close.svg" />
+      </button>
       <nav>
         <ul>
           <li><a href="index.html">Startseite</a></li>
@@ -42,6 +49,7 @@
           <li><a href="#basics">Grundlagen</a></li>
           <li><a href="#html">HTML</a></li>
           <li><a href="#css">CSS</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
         </ul>
       </nav>
     </aside>
@@ -49,12 +57,13 @@
     <section class="content-container" id="basics">
       <h2>Grundlagen</h2>
       <p>
-        In den Grundlagen lernen wir wie das <strong>Internet</strong> funktioniert. Wie kann ein Client mit einem
-        Server kommunizieren? Und was ist überhaupt ein <em>Server</em>?
+        In den Grundlagen lernen wir wie das
+        <strong>Internet</strong> funktioniert. Wie kann ein Client mit einem Server kommunizieren? Und was ist
+        überhaupt ein <em>Server</em>?
       </p>
       <p>
-        Außerdem lernen wir die ersten Tools kennen. Wie funktioniert das <strong>Terminal</strong> bzw. die
-        Kommandozeile? Was ist dieses <strong>Git</strong> und wofür brauchen wir es?
+        Außerdem lernen wir die ersten Tools kennen. Wie funktioniert das
+        <strong>Terminal</strong> bzw. die Kommandozeile? Was ist dieses <strong>Git</strong> und wofür brauchen wir es?
       </p>
     </section>
 
@@ -107,6 +116,22 @@
       </p>
       <br />
       <a class="button" href="https://developer.mozilla.org/de/docs/Web/CSS" target="_blank"> Mehr erfahren</a>
+    </section>
+
+    <aside class="content-container">
+      <hr />
+    </aside>
+
+    <section class="content-container" id="javascript">
+      <h2>JavaScript</h2>
+      <p>
+        Mit JavaScript können wir die Möglichkeiten von HTML und CSS erweitern und unsere Webseite dynamischer und
+        <span>interaktiver</span> gestalten.
+      </p>
+      <br />
+      <button class="button" onclick="document.querySelector('#javascript span').classList.toggle('highlight');">
+        Interaktion
+      </button>
     </section>
 
     <hr />
